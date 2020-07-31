@@ -21,7 +21,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "build-css": "postcss src/css/tailwind.css -o src/css/styles.css",
+    "build-css-watch": "postcss src/css/tailwind.css -o src/css/styles.css --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +45,9 @@
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^5.3.19"
+    "@storybook/react": "^5.3.19",
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.0"
   }
 }
