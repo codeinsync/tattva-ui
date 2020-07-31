@@ -1,7 +1,12 @@
 {
   "name": "tattva-ui",
+  "description": "React + TailwindCSS component system library",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "email": "agarwalankur58@gmail.com",
+    "name": "Ankur Agarwal"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
