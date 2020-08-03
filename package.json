@@ -2,7 +2,7 @@
   "name": "tattva-ui",
   "description": "React + TailwindCSS component system library",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": {
     "email": "agarwalankur58@gmail.com",
     "name": "Ankur Agarwal"
