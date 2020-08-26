@@ -23,6 +23,11 @@
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.2",
+    "eslint": "^7.7.0",
+    "eslint-config-xo": "^0.32.1",
+    "eslint-config-xo-react": "^0.23.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
     "path": "^0.12.7",
     "postcss-cli": "^7.1.1",
     "react-is": "^16.13.1",
@@ -30,12 +35,14 @@
     "tailwindcss": "^1.7.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-node-externals": "^2.5.2"
+    "webpack-node-externals": "^2.5.2",
+    "xo": "^0.33.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && npm run build-tailwind",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-tailwind": "postcss styles/tailwind.css -o styles/styles.css"
+    "build-tailwind": "postcss styles/tailwind.css -o dist/tattva-ui.css",
+    "test": "xo"
   }
 }
